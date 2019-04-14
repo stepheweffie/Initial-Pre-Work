@@ -1,4 +1,6 @@
-/* The 'border-radius' property takes a value in pixels and rounds hard corners of borders. */
+/* The 'border-radius' property takes a value in pixels and rounds hard corners of borders. It can be used in a border
+ specific class or on elements that might have a border via another class. */
+  */
 
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
