@@ -1,3 +1,9 @@
+web_comments.py is a python module I wrote to help me write comments in all files for the pre-work. It can be pasted
+into a Python 3+ Lib directory. It contains two functions; auto_walk_web_comments() and auto_web_comments_in_dir(), which
+write web comments to empty web files in an os.walk or in the current working directory respectively. I ran it
+successfully and automated most comment strings. Neither function will erase a file. There is a helper function that checks
+for empty files before any writing.
+
 # TG-Pre-Work
 
 ### While we do want our developers to work smarter, not harder, please refrain from plagiarizing.  It is completely fine to reword information you have gleaned from internet sources, however, please be prepared to redo the work should you submit a directly copied/pasted answer.  If you must copy/paste, cite your sources (this citation doesn't need to be fancy - just state directly where you found the information or provide a link).  Additionally, some of the questions below are tricky.  The answers were not necessarily covered in the reading we assigned.  They are not intended to be straightforward because we expect you to do some research to discover the answers to the best of your ability.  If you cannot find an answer, explain what you do know and what you are stuck on.  
