@@ -1,1 +1,17 @@
-/* */
+/* Ordering of classes in the style block determines which declaration overrides others. Naming the class attributes in
+ the element tag does not affect any order of usage by the code. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
