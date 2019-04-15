@@ -1,1 +1,7 @@
-/*  */
+/* The 'body' element is found in every HTML document. It is a container element that can be styled in the 'style' block */
+
+<style>
+body {
+    background-color: black;
+}
+</style>
