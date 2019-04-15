@@ -1,1 +1,9 @@
-/* */
+/* RGB is another color representation system in CSS. It takes three values between 0 and 255 to assign the brightness
+ of red, green, or blue to a single mixed color. There are an equal number of possible values for hex and RGB colors. */
+
+<style>
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+</style>
+
