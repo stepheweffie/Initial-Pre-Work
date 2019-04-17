@@ -1,37 +1,27 @@
-/* CSS allows for Applied Visual Design with a few properties. For text, 'text-align' is one way to adjust how text
- appears in the layout of a page and within its containers. Text can be aligned to the right, left, or centered as well
- as "justified" which creates even lines until the last line falls short of the right margin. */
+/* The CSS 'display' property can take a value of 'flex' which applies responsive principles to the elements it is
+applied to. */
 
 <style>
-  h4 {
-    text-align: center;
+  #box-container {
+    height: 500px;
+    display: flex;
   }
-  p {
-    text-align: justify;
-  }
-  .links {
-    margin-right: 20px;
+
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
 
   }
-  .fullCard {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px 5px;
-    padding: 4px;
-  }
-  .cardContent {
-    padding: 10px;
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+
   }
 </style>
-<div class="fullCard">
-  <div class="cardContent">
-    <div class="cardText">
-      <h4>Google</h4>
-      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
-    </div>
-    <div class="cardLinks">
-      <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
-      <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
-    </div>
-  </div>
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
 </div>
