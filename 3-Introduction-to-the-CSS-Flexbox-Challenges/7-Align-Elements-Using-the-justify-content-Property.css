@@ -1,1 +1,29 @@
-/* */
+/* The 'justify-content' property has several options for content alignment. The main axis of a flex container is the
+direction the items are arranged. For 'column' they are top to bottom and for 'row' they are left to right. Several other
+values exist for the 'justify-content' property including 'center', 'flex-start*, 'flex-end', 'space-between', and
+'space-around' */
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
