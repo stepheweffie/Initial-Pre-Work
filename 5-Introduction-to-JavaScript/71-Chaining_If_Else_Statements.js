@@ -1,4 +1,4 @@
-// Many 'if/else' statements can be chained together
+// Many else if statements can be chained together
 
 function testSize(num) {
   // Only change code below this line
