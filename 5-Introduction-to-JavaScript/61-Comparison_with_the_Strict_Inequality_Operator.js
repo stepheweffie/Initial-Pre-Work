@@ -14,4 +14,4 @@ function testStrictNotEqual(val) {
 }
 
 // Change this value to test
-testStrictNotEqual(10);
+testStrictNotEqual(11);
