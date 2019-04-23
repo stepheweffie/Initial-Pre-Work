@@ -1,30 +1,19 @@
-// Card counting with a 'switch' statement and a call sequence 
+// Objects store properties that can be named with strings or numbers and are separated with a commma 
 
-var count = 0;
-function cc(card) {
-      // Only change code below this line
-      switch(card){
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-        case 6:
-          count++;
-          break;
-        case 10:
-        case "J":
-        case "Q":
-        case "K":
-        case "A":
-          count--;
-          break;
-      }
-      if (count > 0){
-        return count + " Bet";
-      } else {
-        return count + " Hold";
-      }
-}
-// Add/remove calls to test your function.
-// Note: Only the last will display
-cc(2); cc(3); cc(7); cc('K'); cc('A');
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+// Only change code below this line.
+
+var myDog = {
+  "name": "Dead",
+  "legs": 3,
+  "tails": 1,
+  "friends": [""]
+
+};
