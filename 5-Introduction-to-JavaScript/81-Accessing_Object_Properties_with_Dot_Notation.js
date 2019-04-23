@@ -1,4 +1,4 @@
-// Dot notation allows access to objects if you know the name of the variable 
+// Dot notation allows access to objects if you know the name of the properties
 
 // Setup
 var testObj = {
