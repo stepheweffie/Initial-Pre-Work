@@ -31,24 +31,25 @@ var collectionCopy = JSON.parse(JSON.stringify(collection));
 function updateRecords(id, prop, value) {
   if (prop !== "tracks") {
     if (value !== "") {
-      collection[id]["album"] = value;
+      delete collection.id.album;
+      collection.id.album = value;
     }
   }
   else if (prop == "tracks") {
-    if (collection[id].hasOwnProperty(prop)) {
-      collection[id].prop[0].push(value);
+    if (collection.id.hasOwnProperty(prop)) {
+      collection.id.prop[0].push(value);
     }
     else {
       var a = [];
-      a = a.push(value);
-      collection[id].tracks = a;
+      a.push(value);
+      collection.id.tracks = a;
     }
   }
-  if (value == "") {
-    delete collection[id].prop;
+  if (value === "") {
+    delete collection.id.prop;
   }
-  if (collection[id].hasOwnProperty(prop) == false) {
-    collection[id].prop = value;
+  if (collection.id.hasOwnProperty(prop) == false) {
+    collection.id.prop = value;
   }
   return collection;
 }
