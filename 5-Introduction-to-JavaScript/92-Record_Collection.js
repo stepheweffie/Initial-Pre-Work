@@ -49,7 +49,9 @@ function updateRecords(id, prop, value) {
     delete collection.id.prop;
   }
   if (collection.id.hasOwnProperty(prop) == false) {
+    if (value !== "") {
     collection.id.prop = value;
+    }
   }
   return collection;
 }
