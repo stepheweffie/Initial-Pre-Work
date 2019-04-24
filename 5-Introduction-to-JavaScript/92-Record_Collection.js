@@ -1,3 +1,6 @@
+/* A record collection can be managed with JSON and javascript. Pay attention to curly brackets. Dot notation throws
+errors. */
+
 // Setup
 var collection = {
     "2548": {
@@ -29,30 +32,19 @@ var collectionCopy = JSON.parse(JSON.stringify(collection));
 
 // Only change code below this line
 function updateRecords(id, prop, value) {
-  if (prop !== "tracks") {
-    if (value !== "") {
-      delete collection.id.album;
-      collection.id.album = value;
-    }
-  }
-  else if (prop == "tracks") {
-    if (collection.id.hasOwnProperty(prop)) {
-      collection.id.prop[0].push(value);
+  if (prop === "tracks" && value !== "") {
+    if (collection[id].hasOwnProperty(prop)) {
+      collection[id][prop].push(value);
     }
     else {
-      var a = [];
-      a.push(value);
-      collection.id.tracks = a;
+      collection[id][prop] = [value];
+    }}
+  else if (value === "") {
+    delete collection[id][prop];
+  }
+  else if (collection[id].hasOwnProperty(prop) === false && value !== "") {
+    collection[id][prop] = value;
     }
-  }
-  if (value === "") {
-    delete collection.id.prop;
-  }
-  if (collection.id.hasOwnProperty(prop) == false) {
-    if (value !== "") {
-    collection.id.prop = value;
-    }
-  }
   return collection;
 }
 
