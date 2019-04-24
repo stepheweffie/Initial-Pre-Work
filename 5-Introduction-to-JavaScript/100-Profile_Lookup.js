@@ -1,4 +1,4 @@
-//
+// Profile lookup 
 
 //Setup
 var contacts = [
@@ -33,19 +33,15 @@ function lookUpProfile(name, prop){
 // Only change code below this line
     for (var i = 0; i <= contacts.length - 1; i++) {
         if (contacts[i].firstName == name) {
-            for (var j = 0; j <= contacts[i].length - 1; j++) {
-                    if (contacts[i][j] == prop) {
-                        return contacts[i].prop;
-                    }
-                    else {
-                        return "No such property";
-                    }
+                if (contacts[i].hasOwnProperty(prop)) {
+                    return contacts[i].prop;
+                }
+                else {
+                    return "No such property";
+                }
             }
-        }
-        else {
-            return "No such contact";
-            }
-        }
+    }
+    return "No such contact";
 // Only change code above this line
 }
 
