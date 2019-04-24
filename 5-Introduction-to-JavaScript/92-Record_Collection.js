@@ -1,5 +1,3 @@
-// A record collection can be cataloged in a complex data structure  
-
 // Setup
 var collection = {
     "2548": {
@@ -32,13 +30,13 @@ var collectionCopy = JSON.parse(JSON.stringify(collection));
 // Only change code below this line
 function updateRecords(id, prop, value) {
   if (prop !== "tracks") {
-    if (value.length > 0) {
-      collection[id].album = value;
+    if (value !== "") {
+      collection[id]["album"] = value;
     }
   }
   else if (prop == "tracks") {
     if (collection[id].hasOwnProperty(prop)) {
-      collection[id].prop.push(value);
+      collection[id].prop[0].push(value);
     }
     else {
       var a = [];
@@ -46,8 +44,11 @@ function updateRecords(id, prop, value) {
       collection[id].tracks = a;
     }
   }
-  if (value.length == 0) {
+  if (value == "") {
     delete collection[id].prop;
+  }
+  if (collection[id].hasOwnProperty(prop) == false) {
+    collection[id].prop = value;
   }
   return collection;
 }
