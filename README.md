@@ -47,7 +47,7 @@ Runtime is the period of time between a program executing and quitting.
 
 ## How many instances of the client-side assets (HTML, CSS, JS, Images, etc.) are created?
 
-Client-side assets are cached in a single instance for each cache. Techtonic does not have a manifest for it's application.
+Client-side assets are cached in a single instance for each cache.
 
 ## How many instances of the server-side code are available at any given time?
 
