@@ -54,6 +54,7 @@ Client-side assets are cached in a single instance for each cache.
 It depends on how it is scaled.
 
 ## How many instances of the databases connected to the server application are created?
+
 One for a visit to the URL before anything else is accessed.
 A new instance is created every time a CRUD (create, read, update, delete) function is implemented on the database.
 See also https://www.lifewire.com/database-instance-1019612 for disambiguation.
