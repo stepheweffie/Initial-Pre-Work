@@ -1,4 +1,4 @@
-/* The 'map' function can create arrays of output by applying operations to existing arrays. String literals are a template
+/* The 'map' function can create arrays of output by applying operations to existing arrays. Template literals are a template
 for string variables and require the $(variable) syntax inside backticks instead of quotes.
 http://www.javascripttutorial.net/javascript-array-map/ */
 
