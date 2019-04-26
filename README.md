@@ -31,15 +31,15 @@ The browser will send more GET requests for any URLs in the HTML tags, CSS, or j
 ## What code is rendered in the browser?
 
 The visible DOM (Document Object Model) tags and parsed CSSOM (CSS Object Model) are rendered in the browser with
-the creation of a rendering tree.
+the creation of a rendering tree that the browser paints.
 
 ## What is the server-side code’s main function?
 
-Server-side code retrieves and stores data in databases and files.
+Server-side code retrieves and stores data in databases and files, but also returns HTML to the client.
 
 ## What is the client-side code’s main function?
 
-Client-side code allows interaction with a webpage via a web browser to enable user experience.
+Client-side code allows interaction with a webpage via scripts and a web browser to enable user experience.
 
 ## What is runtime?
 
@@ -47,12 +47,13 @@ Runtime is the period of time between a program executing and quitting.
 
 ## How many instances of the client-side assets (HTML, CSS, JS, Images, etc.) are created?
 
-
+Client-side assets are cached in a single instance for each cache.
 
 ## How many instances of the server-side code are available at any given time?
 
-
+It depends on how it is scaled.
 
 ## How many instances of the databases connected to the server application are created?
-
-
+One for a visit to the URL before anything else is accessed.
+A new instance is created every time a CRUD (create, read, update, delete) function is implemented on the database.
+See also https://www.lifewire.com/database-instance-1019612 for disambiguation.
